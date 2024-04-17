@@ -1,0 +1,37 @@
+{
+  "-NvZNkWqwYOeF0lVRAVm": {
+    "firebaseKey": "-NvZNkWqwYOeF0lVRAVm",
+    "image": "https://i.pinimg.com/736x/3f/6e/a8/3f6ea87c2f2272547958d89b8d2b403f.jpg",
+    "name": "Doug Remer",
+    "role": "Point Guard",
+    "uid": "BVp4aqdEj2aI1BN70PvPkv6WAY93"
+  },
+  "-NvZNkWqwYOeF0lVRAVn": {
+    "firebaseKey": "-NvZNkWqwYOeF0lVRAVn",
+    "image": "https://44.media.tumblr.com/206749eeb01f70222f0763469f377e16/6359d5a97d3f2d0f-bf/s540x810_f1/e75dbd81d8732cf22ec5dcf3d98f9261106e5b00.gif",
+    "name": "Joe Cooper",
+    "role": "Shooting Guard",
+    "uid": "BVp4aqdEj2aI1BN70PvPkv6WAY93"
+  },
+  "-NvZNkWrcJ-ixenR7vPQ": {
+    "firebaseKey": "-NvZNkWrcJ-ixenR7vPQ",
+    "image": "https://i.redd.it/u70fukivlqm51.jpg",
+    "name": "Squeak Scolari",
+    "role": "Small Forward",
+    "uid": "BVp4aqdEj2aI1BN70PvPkv6WAY93"
+  },
+  "-NvZNkWrcJ-ixenR7vPR": {
+    "firebaseKey": "-NvZNkWrcJ-ixenR7vPR",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPY8CytfV_TEpqrZF2mhTL3i81rwYnSlUhN7zKQxQrqw&s",
+    "name": "Jenna Reed",
+    "role": "Shooting Guard",
+    "uid": "BVp4aqdEj2aI1BN70PvPkv6WAY93"
+  },
+  "-NvZNkWrcJ-ixenR7vPS": {
+    "firebaseKey": "-NvZNkWrcJ-ixenR7vPS",
+    "image": "https://11points.com/wp-content/uploads/2012/07/ernest-ted.jpg",
+    "name": "Ted Denslow",
+    "role": "Center",
+    "uid": "BVp4aqdEj2aI1BN70PvPkv6WAY93"
+  }
+}
