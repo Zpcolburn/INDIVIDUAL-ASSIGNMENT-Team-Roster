@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { deleteMember } from '../api/membersData';
 
 function MemberCard({ memberObj, onUpdate }) {
-  // FOR DELETE, WE NEED TO REMOVE THE Author AND HAVE THE VIEW RERENDER,
-  // SO WE PASS THE FUNCTION FROM THE PARENT THAT GETS THE Author
+  // FOR DELETE, WE NEED TO REMOVE THE MEMBER AND HAVE THE VIEW RERENDER,
+  // SO WE PASS THE FUNCTION FROM THE PARENT THAT GETS THE MEMBER
   const deleteThisMember = () => {
     if (window.confirm(`Delete ${memberObj.name}?`)) {
       deleteMember(memberObj.firebaseKey).then(() => onUpdate());

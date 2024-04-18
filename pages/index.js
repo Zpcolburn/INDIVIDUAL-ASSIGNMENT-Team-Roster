@@ -29,7 +29,7 @@ function Home() {
         <Button>Add A Member</Button>
       </Link>
       <div className="d-flex flex-wrap">
-        {/* TODO: map over members here using MemberCard component */}
+        {/*  map over members here using MemberCard component */}
         {members.map((member) => (
           <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={getAllTheMembers} />
         ))}
