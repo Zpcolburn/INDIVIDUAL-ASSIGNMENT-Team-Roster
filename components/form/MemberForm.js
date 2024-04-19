@@ -23,6 +23,7 @@ function MemberForm({ obj }) {
   }, [obj, user]);
 
   const handleChange = (e) => {
+    console.warn(e.target);
     const { name, value } = e.target;
     setFormInput((prevState) => ({
       ...prevState,
@@ -52,16 +53,16 @@ function MemberForm({ obj }) {
       <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Member</h2>
       <FloatingLabel controlId="floatingInput1" label="Member Image" className="mb-3">
         <Form.Control
-          type="url"
+          type="text"
           placeholder="Enter Image URL"
-          name="Image"
+          name="image"
           value={formInput.image}
           onChange={handleChange}
           required
         />
       </FloatingLabel>
 
-      <FloatingLabel controlId="floatingInput1" label="Member Name" className="mb-3">
+      <FloatingLabel controlId="floatingInput2" label="Member Name" className="mb-3">
         <Form.Control
           type="text"
           placeholder="Enter Member Name"
@@ -72,15 +73,21 @@ function MemberForm({ obj }) {
         />
       </FloatingLabel>
 
-      <FloatingLabel controlId="floatingInput1" label="Member Role" className="mb-3">
-        <Form.Control
+      <FloatingLabel controlId="floatingSelect3" label="Member Role" className="mb-3">
+        <Form.Select
           type="text"
           placeholder="Enter Member Role"
           name="role"
           value={formInput.role}
           onChange={handleChange}
           required
-        />
+        >
+          <option> Select a Role</option>
+          <option value="Center">Center</option>
+          <option value="Power Forward">Power Forward</option>
+          <option value="Small Forward">Small Forward</option>
+          <option value="Shooting Guard">Shooting Guard</option>
+        </Form.Select>
       </FloatingLabel>
 
       {/* A WAY TO HANDLE UPDATES FOR TOGGLES, RADIOS, ETC  */}
