@@ -19,12 +19,8 @@ function MemberCard({ memberObj, onUpdate }) {
       <Card.Body>
         <Card.Title>{memberObj.name} </Card.Title>
         <Card.Text>{memberObj.role}</Card.Text>
-        {/* DYNAMIC LINK TO VIEW THE MEMBER DETAILS  */}
-        <Link href={`/member/${memberObj.firebaseKey}`} passHref>
-          <Button variant="primary" className="m-2">VIEW</Button>
-        </Link>
         {/* DYNAMIC LINK TO EDIT THE MEMBER DETAILS  */}
-        <Link href={`/member/edit/${memberObj.firebaseKey}`} passHref>
+        <Link href={`/members/edit/${memberObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Button variant="danger" onClick={deleteThisMember} className="m-2">
