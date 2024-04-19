@@ -35,7 +35,7 @@ function MemberForm({ obj }) {
     e.preventDefault();
     // If updating member that has a firebasekey, then pull in information fro user to change and push back to firebase. //
     if (obj.firebaseKey) {
-      updateMember(formInput).then(() => router.push(`/members/${obj.firebaseKey}`));
+      updateMember(formInput).then(() => router.push('/'));
       // If no firebaseKey give blank form for user to imput and when submitted will push new Member to firebase. //
     } else {
       const payload = { ...formInput, uid: user.uid };
