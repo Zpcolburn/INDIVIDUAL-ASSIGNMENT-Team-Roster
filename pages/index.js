@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className="text-center my-4">
       <Link href="/members/new" passHref>
-        <Button>Add A Member</Button>
+        <Button>Add A Player</Button>
       </Link>
       <div className="d-flex flex-wrap">
         {/*  map over members here using MemberCard component */}

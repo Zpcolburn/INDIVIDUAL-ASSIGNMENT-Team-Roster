@@ -50,8 +50,8 @@ function MemberForm({ obj }) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Member</h2>
-      <FloatingLabel controlId="floatingInput1" label="Member Image" className="mb-3">
+      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Player</h2>
+      <FloatingLabel controlId="floatingInput1" label="Player Image" className="mb-3">
         <Form.Control
           type="text"
           placeholder="Enter Image URL"
@@ -62,10 +62,10 @@ function MemberForm({ obj }) {
         />
       </FloatingLabel>
 
-      <FloatingLabel controlId="floatingInput2" label="Member Name" className="mb-3">
+      <FloatingLabel controlId="floatingInput2" label="Player Name" className="mb-3">
         <Form.Control
           type="text"
-          placeholder="Enter Member Name"
+          placeholder="Enter Player Name"
           name="name"
           value={formInput.name}
           onChange={handleChange}
@@ -73,16 +73,16 @@ function MemberForm({ obj }) {
         />
       </FloatingLabel>
 
-      <FloatingLabel controlId="floatingSelect3" label="Member Role" className="mb-3">
+      <FloatingLabel controlId="floatingSelect3" label="Player Position" className="mb-3">
         <Form.Select
           type="text"
-          placeholder="Enter Member Role"
+          placeholder="Enter Player Role"
           name="role"
           value={formInput.role}
           onChange={handleChange}
           required
         >
-          <option> Select a Role</option>
+          <option> Select a Position</option>
           <option value="Center">Center</option>
           <option value="Power Forward">Power Forward</option>
           <option value="Small Forward">Small Forward</option>
